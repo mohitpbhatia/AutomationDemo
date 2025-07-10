@@ -118,7 +118,7 @@ public class eCommerceTest {
 
 		test = report.createTest("E-Comm : Product Added to Cart");
 		test.log(Status.PASS, MarkupHelper.createLabel("E-Comm Product Added to Cart:Pass", ExtentColor.GREEN));
-		test.addScreenCaptureFromPath(scfile);
+		test.addScreenCaptureFromPath(scfile); // Add Screenshot in the Extent Report
 	}
 
 	@Test(priority = 5)
