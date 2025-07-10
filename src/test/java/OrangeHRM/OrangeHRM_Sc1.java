@@ -27,7 +27,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class OHRM_DDT {
+public class OrangeHRM_Sc1 {
 
 	public static WebDriver driver = new ChromeDriver();
 	String fpath = System.getProperty("user.dir") + "\\testdata\\testdataworkbook.xlsx";

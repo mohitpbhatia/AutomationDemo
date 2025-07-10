@@ -99,7 +99,7 @@ public class eCommerceTest {
 		Date d = new Date();
 		String FileName = d.toString().replace(":", "_").replace(" ", "_") + ".png";
 		File screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
+		String scfile = System.getProperty("user.dir") + "\\EcommTestScreenshots\\" + FileName;
 		Thread.sleep(2000);
 		// productBrowsing.clickOnMacAirBook();
 		// navigate back
@@ -118,7 +118,7 @@ public class eCommerceTest {
 
 		test = report.createTest("E-Comm : Product Added to Cart");
 		test.log(Status.PASS, MarkupHelper.createLabel("E-Comm Product Added to Cart:Pass", ExtentColor.GREEN));
-
+		test.addScreenCaptureFromPath(scfile);
 	}
 
 	@Test(priority = 5)
@@ -140,11 +140,13 @@ public class eCommerceTest {
 		String FileName = d.toString().replace(":", "_").replace(" ", "_") + ".png";
 		File screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(screenShot, new File("EcommTestScreenshots\\" + FileName));
+		String scfile = System.getProperty("user.dir") + "\\EcommTestScreenshots\\" + FileName;
 
 		cart.clickOnOK();
 
 		test = report.createTest("E-Comm : Cart Checkout Test");
 		test.log(Status.PASS, MarkupHelper.createLabel("E-Comm Cart Checkout:Pass", ExtentColor.GREEN));
+		test.addScreenCaptureFromPath(scfile);
 	}
 
 	@BeforeTest
