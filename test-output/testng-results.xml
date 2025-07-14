@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-12T07:28:47 IST" name="Default suite" finished-at="2025-07-12T07:29:14 IST" duration-ms="27098">
+    <groups>
+    </groups>
+    <test started-at="2025-07-12T07:28:47 IST" name="Default test" finished-at="2025-07-12T07:29:14 IST" duration-ms="27098">
+      <class name="apiAssignment.TelecomProject">
+        <test-method is-config="true" signature="setup()[pri:0, instance:apiAssignment.TelecomProject@2f08c4b]" started-at="2025-07-12T07:28:47 IST" name="setup" finished-at="2025-07-12T07:28:49 IST" duration-ms="1937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCreateUser()[pri:1, instance:apiAssignment.TelecomProject@2f08c4b]" started-at="2025-07-12T07:28:49 IST" name="testCreateUser" finished-at="2025-07-12T07:28:57 IST" duration-ms="7611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUser -->
+        <test-method signature="testLoginUser()[pri:2, instance:apiAssignment.TelecomProject@2f08c4b]" started-at="2025-07-12T07:28:57 IST" name="testLoginUser" finished-at="2025-07-12T07:29:01 IST" depends-on-methods="apiAssignment.TelecomProject.testCreateUser" duration-ms="3985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginUser -->
+        <test-method signature="testGetUserProfile()[pri:3, instance:apiAssignment.TelecomProject@2f08c4b]" started-at="2025-07-12T07:29:01 IST" name="testGetUserProfile" finished-at="2025-07-12T07:29:02 IST" depends-on-methods="apiAssignment.TelecomProject.testLoginUser" duration-ms="1787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserProfile -->
+        <test-method signature="testUpdateUser()[pri:4, instance:apiAssignment.TelecomProject@2f08c4b]" started-at="2025-07-12T07:29:02 IST" name="testUpdateUser" finished-at="2025-07-12T07:29:04 IST" depends-on-methods="apiAssignment.TelecomProject.testLoginUser" duration-ms="1531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUser -->
+        <test-method signature="testAddContact()[pri:5, instance:apiAssignment.TelecomProject@2f08c4b]" started-at="2025-07-12T07:29:04 IST" name="testAddContact" finished-at="2025-07-12T07:29:06 IST" depends-on-methods="apiAssignment.TelecomProject.testLoginUser" duration-ms="1793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddContact -->
+        <test-method signature="testGetAllContacts()[pri:6, instance:apiAssignment.TelecomProject@2f08c4b]" started-at="2025-07-12T07:29:06 IST" name="testGetAllContacts" finished-at="2025-07-12T07:29:08 IST" depends-on-methods="apiAssignment.TelecomProject.testAddContact" duration-ms="1723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllContacts -->
+        <test-method signature="testGetSpecificContact()[pri:7, instance:apiAssignment.TelecomProject@2f08c4b]" started-at="2025-07-12T07:29:08 IST" name="testGetSpecificContact" finished-at="2025-07-12T07:29:09 IST" depends-on-methods="apiAssignment.TelecomProject.testAddContact" duration-ms="1621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSpecificContact -->
+        <test-method signature="testUpdateContact()[pri:8, instance:apiAssignment.TelecomProject@2f08c4b]" started-at="2025-07-12T07:29:09 IST" name="testUpdateContact" finished-at="2025-07-12T07:29:11 IST" depends-on-methods="apiAssignment.TelecomProject.testGetSpecificContact" duration-ms="1565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateContact -->
+        <test-method signature="testPartialUpdateContact()[pri:9, instance:apiAssignment.TelecomProject@2f08c4b]" started-at="2025-07-12T07:29:11 IST" name="testPartialUpdateContact" finished-at="2025-07-12T07:29:12 IST" depends-on-methods="apiAssignment.TelecomProject.testUpdateContact" duration-ms="1612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPartialUpdateContact -->
+        <test-method signature="testLogoutUser()[pri:10, instance:apiAssignment.TelecomProject@2f08c4b]" started-at="2025-07-12T07:29:12 IST" name="testLogoutUser" finished-at="2025-07-12T07:29:14 IST" depends-on-methods="apiAssignment.TelecomProject.testPartialUpdateContact" duration-ms="1646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutUser -->
+      </class> <!-- apiAssignment.TelecomProject -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
